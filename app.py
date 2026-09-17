@@ -15,131 +15,60 @@ if "bills" not in st.session_state:
 # Menu 
 # ========================== 
 menu = { 
-
     "Đồ ăn": { 
-
         "Pizza Hải Sản": 120000, 
-
         "Mì Ý Bò Bằm": 50000, 
-
         "Burger Gà": 65000, 
-
         "Salad Trộn": 50000, 
-
         "Bít tết Bò Mỹ": 250000, 
-
         "Sườn nướng BBQ": 180000, 
-
         "Cánh gà chiên mắm": 75000, 
-
         "Lẩu cá diêu hồng": 200000, 
-
+        "Chí Tây 1m5": 1000000000,
         "Lẩu Thái hải sản": 300000, 
-
         "Lẩu cá kèo": 140000 
-
     }, 
-
     "Thức uống": { 
-
         "Coca Cola": 20000, 
-
         "Pepsi": 20000, 
-
         "Trà Đào Cam Sả": 35000, 
-
         "Cà Phê Sữa": 25000, 
-
         "Nước Suối": 10000, 
-
         "Sinh tố Bơ": 45000, 
-
         "Nước ép cam": 40000, 
-
         "Mojito chanh dây": 55000, 
-
         "Bia Heineken": 30000 
-
     } 
-
 } 
-
- 
-
 # ========================== 
-
 # Menu bên trái 
-
 # ========================== 
-
 page = st.sidebar.radio("Chức năng", ["🍽️ Order", "📋 Admin"]) 
-
- 
-
 # ========================================================== 
-
 # TRANG ORDER 
-
 # ========================================================== 
-
 if page == "🍽️ Order": 
-
- 
-
     table_number = st.number_input( 
-
         "Số bàn", 
-
         min_value=1, 
-
         step=1, 
-
         value=1 
-
     ) 
-
- 
-
     col1, col2 = st.columns([1, 1.5]) 
-
- 
-
     with col1: 
-
- 
-
         st.subheader("Chọn món") 
-
- 
-
         category = st.selectbox( 
-
             "Loại món", 
-
             list(menu.keys()) 
-
         ) 
-
- 
-
         item = st.selectbox( 
-
             "Tên món", 
-
             list(menu[category].keys()) 
-
         ) 
-
- 
-
         quantity = st.number_input( 
-
             "Số lượng", 
-
             min_value=1, 
-
             value=1 
-
         ) 
 
  
