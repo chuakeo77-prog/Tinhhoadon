@@ -2,7 +2,7 @@ import streamlit as st
 st.image("logo1.jpg") 
 import pandas as pd 
 from datetime import datetime 
-st.set_page_config(page_title="Order Yumicute", layout="pink") 
+st.set_page_config(page_title="Order Yumicute", layout="wide") 
 st.title(" Hệ thống Order Nhà Hàng - Yumi/-cute") 
 # ========================== 
 # Khởi tạo dữ liệu 
