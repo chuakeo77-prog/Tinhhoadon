@@ -19,7 +19,8 @@ menu = {
         "Pizza Hải Sản": 120000, 
         "Mì Ý Bò Bằm": 50000, 
         "Burger Gà": 65000, 
-        "Salad Trộn": 50000, 
+        "Salad Trộn": 50000,
+        "Tinh Yêu Cho Em": 9999999999.
         "Bít tết Bò Mỹ": 250000, 
         "Sườn nướng BBQ": 180000, 
         "Cánh gà chiên mắm": 75000, 
